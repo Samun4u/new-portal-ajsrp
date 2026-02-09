@@ -1,0 +1,589 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+input:focus {
+  box-shadow: none;
+  outline: unset;
+}
+
+textarea:focus {
+  box-shadow: none;
+  outline: unset;
+}
+
+select:focus {
+  box-shadow: none;
+}
+
+body {
+  font-family: "Inter", serif;
+  color: #706969;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 0;
+}
+
+/* =============== COMMON CSS FOR WEB SITE =============== */
+:root {
+  /* --bg_color: #0071DC; */
+  --bg_color: #e8594d;
+  --bg_color2: #253657;
+  --text_color: #706969;
+  --header_color: #252525;
+  --border_color: #ddd;
+  --white_color: #fff;
+  --sbg_color: rgb(59 84 219 / 4%);
+}
+
+h1 {
+  font-size: 55px;
+  line-height: 65px;
+  /* color: #FFF; */
+  color: #d5d5d5;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 700;
+  color: var(--header_color);
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--header_color);
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 15px;
+  color: var(--text_color);
+}
+
+.wh {
+  /* color: #FFF; */
+  color: #f7e9e9;
+}
+
+.d_flex {
+  display: flex;
+  align-items: center;
+}
+
+.d_justify {
+  justify-content: space-between;
+}
+
+input {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.section_height {
+  padding-top: 100px;
+}
+
+.box_shadow {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.28);
+}
+
+input {
+  font-size: 16px;
+}
+
+label {
+  font-size: 16px;
+}
+
+textarea {
+  font-size: 16px;
+}
+
+button {
+  border: none;
+}
+
+a,
+button {
+  display: inline-block;
+  background: none;
+  transition: all linear 0.2s;
+}
+
+.height {
+  height: 85vh;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START header PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.header-menu {
+  padding: 10px 0;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-menu .search {
+  width: 510px;
+  position: relative;
+}
+
+.header-menu .search input {
+  width: 100%;
+  border-radius: 30px;
+  padding: 8px 20px;
+  border: 2px solid #00599c;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.header-menu .search button {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  padding: 5px;
+  background: var(--white_color);
+}
+
+.header-menu .login-register {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-menu .login-register a {
+  font-size: 18px;
+  line-height: 28px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-weight: 400;
+}
+
+.header-menu .login-register a:nth-child(1) {
+  background: #f2f8fe;
+}
+
+.header-menu .login-register a:nth-child(2) {
+  padding-right: 0;
+}
+
+.header-menu .login-register a svg {
+  color: #5678a8;
+}
+
+.header-menu .login-register a:hover {
+  color: #00599c;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    END header PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START navbar PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.navbar-menu {
+  background: var(--bg_color2);
+}
+
+.navbar-menu ul {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-menu ul li {
+  position: relative;
+}
+
+.navbar-menu ul a {
+  padding: 2px 20px;
+  color: var(--white_color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  line-height: 48px;
+  position: relative;
+  font-weight: 700;
+}
+
+.navbar-menu ul li:last-child {
+  margin-left: 15px;
+}
+
+.navbar-menu ul li:last-child a {
+  background: var(--bg_color);
+}
+
+.navbar-menu ul a:hover {
+  background: #0955a4;
+}
+
+.navbar-menu ul a::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  background: #96c9fd;
+  visibility: hidden;
+  transition: all linear 0.2s;
+}
+
+.navbar-menu ul li:last-child a::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #ff958c;
+  visibility: visible;
+}
+
+.navbar-menu ul a:hover::after {
+  visibility: visible;
+  height: 5px;
+}
+
+/* submenu start */
+.navbar-menu ul li .submenu {
+  left: 0;
+  top: 50px;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  z-index: 9;
+  display: none;
+  min-width: 420px;
+}
+
+.navbar-menu ul li:hover .submenu {
+  display: flex;
+}
+
+.navbar-menu ul li .submenu .duel-menu {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.navbar-menu ul li:nth-child(2) .submenu .duel-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.navbar-menu ul .submenu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.navbar-menu .submenu a {
+  color: #333;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.navbar-menu ul .submenu ul li:last-child {
+  margin-left: 0;
+}
+
+.navbar-menu ul .submenu ul li:last-child a {
+  background: none;
+}
+
+.navbar-menu ul .submenu ul li:last-child a svg {
+  width: 17px;
+}
+
+.navbar-menu ul .submenu ul li:last-child a::after {
+  background: none;
+}
+
+.navbar-menu .submenu a:hover {
+  background: none;
+  color: #00599c;
+}
+
+.navbar-menu .submenu a:hover::after {
+  height: 0;
+}
+
+.navbar-menu .submenu ul svg {
+  color: #00599c;
+}
+
+.navbar-menu ul li .submenu .right svg {
+  color: var(--bg_color);
+}
+
+.navbar-menu .submenu ul:nth-child(2) svg {
+  color: var(--bg_color);
+}
+
+.navbar-menu ul li .submenu .left {
+  padding: 20px 30px;
+}
+
+.navbar-menu ul li .submenu .right {
+  width: calc(100% - 750px);
+  padding: 20px 30px;
+}
+
+.navbar-menu ul li .submenu h5,
+.navbar-menu ul li .submenu h6 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #6d6d6d;
+  font-weight: 400;
+}
+
+.navbar-menu ul li .submenu h6 {
+  margin: 15px 0;
+}
+
+.navbar-menu ul li .submenu .view-all {
+  margin-top: 16px;
+}
+
+.navbar-menu ul li .submenu .view-all a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2a7ffe;
+  color: #fff;
+  border-radius: 6px;
+  line-height: 28px;
+  padding: 8px 0;
+}
+
+.navbar-menu ul li:nth-child(2) .submenu .right svg {
+  color: #468847;
+}
+
+.navbar-menu ul li:nth-child(2) .submenu .left {
+  width: 750px;
+  padding-right: 30px;
+  border-right: 1px solid var(--border_color);
+}
+
+.navbar-menu ul li:nth-child(2) .submenu {
+  width: 1200px;
+}
+
+.navbar-menu ul li:nth-child(2) .submenu .left {
+  padding-right: 30px;
+  border-right: 1px solid var(--border_color);
+}
+
+.navbar-menu ul li:nth-child(4) .submenu {
+  width: 700px;
+}
+
+.navbar-menu ul li:nth-child(4) .submenu .left {
+  width: 400px;
+}
+
+.navbar-menu ul li .submenu .right {
+  width: calc(100% - 400px);
+  padding: 20px 30px;
+}
+
+.navbar-menu ul li:nth-child(7) .submenu {
+  width: 700px;
+  left: unset;
+  right: 0;
+}
+
+.navbar-menu ul li:nth-child(4) .submenu .left {
+  width: 400px;
+}
+
+/* submenu end */
+
+/* mobile-menu */
+.mobile-menu {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    END navbar PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    END  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    END  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    END  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    END  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    END  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START footer PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.footer {
+  background: #243556;
+  padding-top: 40px;
+}
+
+.footer-about {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 15px;
+}
+
+.footer h3 {
+  color: var(--white_color);
+  font-size: 18px;
+}
+
+.footer-about p {
+  color: #b9c8d7;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.footer-about a {
+  font-size: 15px;
+  color: #de9b32;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.footer-menu li {
+  width: 100%;
+}
+
+.footer-menu.middle li {
+  width: 48%;
+}
+
+.footer-menu a {
+  color: #b9c8d7;
+  font-size: 13.2px;
+}
+
+.tiny-footer {
+  color: var(--white_color);
+  text-align: center;
+  font-size: 15px;
+  color: #8a9fb5;
+  background: #243556;
+  margin-top: 20px;
+  padding: 20px 0;
+  border-top: 1px solid #415274;
+  font-size: 14px;
+}
+
+.tiny-footer a {
+  color: var(--bg_color);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    END footer PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */

@@ -1,0 +1,118 @@
+/* Form */
+.zForm-label {
+  margin-bottom: toRem(8);
+  font-size: toRem(14);
+  font-weight: $fw_medium;
+  line-height: toRem(20);
+  color: $title-black;
+}
+.zForm-control {
+  display: block;
+  width: 100%;
+  padding: toRem(13) toRem(20) toRem(15);
+  font-size: toRem(14);
+  font-weight: $fw_regular;
+  line-height: toRem(22);
+  color: $title-black;
+  background-color: $white;
+  background-clip: padding-box;
+  border: toRem(1) solid $stroke;
+  border-radius: toRem(8);
+  appearance: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &:focus,
+  &:hover {
+    border: toRem(1) solid $main-color;
+    color: $para-text !important;
+    background-color: $white !important;
+    box-shadow: 0 0 0 rgb(0 0 0 / 0);
+  }
+  &::placeholder {
+    font-size: toRem(12);
+    font-weight: $fw_regular;
+    color: $para-text;
+  }
+  &-table {
+    padding: toRem(10.5) toRem(10);
+  }
+}
+textarea {
+  &.zForm-control {
+    resize: none;
+    &-textarea-2 {
+      background-color: $body-bg;
+      border-color: $body-bg;
+    }
+  }
+}
+/* Checkbox */
+.zForm-wrap-checkbox {
+  display: flex;
+  align-items: center;
+  gap: toRem(12);
+  input {
+    &.form-check-input {
+      margin-top: 0;
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+      border: 1px solid $dark-color;
+      border-radius: toRem(2);
+      background-color: $white;
+      &:checked {
+        background-color: $main-color;
+        border-color: $main-color;
+      }
+    }
+  }
+  label {
+    @include fontFamily(14, $fw_regular, 22, $para-text);
+  }
+  &-2 {
+    display: flex;
+    align-items: center;
+    gap: toRem(9);
+    input {
+      &.form-check-input {
+        margin-top: 0;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        border: 1px solid $para-text;
+        border-radius: toRem(4);
+        background-color: $white;
+        &:checked {
+          background-color: $purple;
+          border-color: $purple;
+        }
+      }
+      &[type="radio"] {
+        &.form-check-input {
+          border-radius: 50%;
+        }
+      }
+    }
+    label {
+      display: flex;
+      flex-direction: column;
+      @include fontFamily(14, $fw_regular, 22, $para-text);
+    }
+  }
+}
+/* Radio */
+.zForm-wrap-radio {
+  display: flex;
+  align-items: center;
+  gap: toRem(12);
+  input {
+    &.form-check-input {
+      margin-top: 0;
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+      border: 1px solid $para-text;
+      background-color: $white;
+      &:checked {
+        background-color: $main-color;
+        border-color: $main-color;
+      }
+    }
+  }
+  label {
+    @include fontFamily(14, $fw_regular, 22, $para-text);
+  }
+}

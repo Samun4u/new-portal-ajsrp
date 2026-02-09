@@ -1,0 +1,56 @@
+$theme-colors: (
+  "white": var(--white),
+  "white-8": var(--white-8),
+  "white-50": var(--white-50),
+  "black": var(--black),
+  "black-10": var(--black-10),
+  "body-bg": var(--body-bg),
+  "primary-color": var(--primary-color),
+  "main-color": var(--main-color),
+  "main-color-10": var(--main-color-10),
+  "title-black": var(--title-black),
+  "title-black-20": var(--title-black-20),
+  "para-text": var(--para-text),
+  "purple": var(--purple),
+  "purple-10": var(--purple-10),
+  "purple-20": var(--purple-20),
+  "stroke": var(--stroke),
+  "green": var(--green),
+  "green-10": var(--green-10),
+  "bg-color": var(--bg-color),
+  "yellow": var(--yellow),
+  "yellow-10": var(--yellow-10),
+  "red": var(--red),
+  "red-10": var(--red-10),
+  "dark-color": var(--dark-color),
+  "hover-color": var(--hover-color),
+  "header-color": var(--header-color),
+  "scroll-track": var(--scroll-track),
+  "scroll-thumb": var(--scroll-thumb),
+  "img-upload": var(--img-upload),
+  "color1-10": var(--color1-10),
+  "color2-10": var(--color2-10),
+  "color3": var(--color3),
+  "color4": var(--color4),
+  "color5": var(--color5),
+  "color6": var(--color6),
+  "table-bottom-70": var(--table-bottom-70),
+  "ld-testi-bg": var(--ld-testi-bg),
+);
+@each $key, $color in $theme-colors {
+  .text-#{$key} {
+    color: $color !important;
+  }
+}
+/* Background Color */
+@each $key, $color in $theme-colors {
+  .bg-#{$key} {
+    background-color: $color !important;
+  }
+}
+/* Border Color */
+@each $key, $color in $theme-colors {
+  .bd-c-#{$key} {
+    border-color: $color !important;
+  }
+}

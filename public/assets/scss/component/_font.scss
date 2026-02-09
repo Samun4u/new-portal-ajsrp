@@ -1,0 +1,58 @@
+/* Fnot size */
+$fs-array: 32;
+@each $fs in $fs-array {
+  .fs-#{$fs} {
+    font-size: toRem($fs);
+  }
+}
+$fs-sm-array: 48;
+@each $fs-sm in $fs-sm-array {
+  .fs-sm-#{$fs-sm} {
+    @media screen and (min-width: 576px) {
+      font-size: toRem($fs-sm);
+    }
+  }
+}
+@for $fs from 10 through 30 {
+  .fs-#{$fs} {
+    font-size: toRem($fs) !important;
+  }
+}
+/* Font weight */
+$fw-array: 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000;
+@each $fw in $fw-array {
+  .fw-#{$fw} {
+    font-weight: #{$fw};
+  }
+}
+/* Line Height */
+$lh-array: 32, 38, 44, 48;
+@each $lh in $lh-array {
+  .lh-#{$lh} {
+    line-height: toRem($lh);
+  }
+}
+$lh-sm-array: 57;
+@each $lh-sm in $lh-sm-array {
+  .lh-sm-#{$lh-sm} {
+    @media screen and (min-width: 576px) {
+      line-height: toRem($lh-sm);
+    }
+  }
+}
+@for $lh from 10 through 34 {
+  .lh-#{$lh} {
+    line-height: toRem($lh) !important;
+  }
+}
+/* Letter Spacing */
+$ls-array: 1;
+@each $ls in $ls-array {
+  .ls-#{$ls} {
+    letter-spacing: toRem($ls);
+  }
+}
+/* text justify */
+.text-justify {
+  text-align: justify;
+}

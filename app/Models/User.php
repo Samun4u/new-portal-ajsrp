@@ -1,0 +1,134 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Rappasoft\LaravelAuthenticationLog\Traits\AuthenticationLoggable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Str;
+use Laravel\Sanctum\HasApiTokens;
+use Spatie\Permission\Traits\HasRoles;
+
+class User extends Authenticatable
+{
+    use HasApiTokens, HasFactory, Notifiable, HasRoles, AuthenticationLoggable, SoftDeletes;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'uuid',
+        'name',
+        'nick_name',
+        'date_of_birth',
+        'email',
+        'mobile',
+        'whatsapp_number',
+        'country',
+        'city',
+        'zip_code',
+        'address',
+        'currency',
+        'company_name',
+        'company_country',
+        'company_city',
+        'company_designation',
+        'company_zip_code',
+        'company_address',
+        'email_verified_at',
+        'password',
+        'image',
+        'role',
+        'email_verification_status',
+        'phone_verification_status',
+        'google_auth_status',
+        'google2fa_secret',
+        'google_id',
+        'facebook_id',
+        'verify_token',
+        'otp',
+        'otp_expiry',
+        'last_seen',
+        'show_email_in_public',
+        'show_phone_in_public',
+        'created_by',
+        'company_logo',
+        'status',
+        'tenant_id',
+        'linkedin_id',
+        'linkedin_token',
+        'linkedin_refresh_token',
+        'orcid_id',
+        'orcid_token',
+        'orcid_refresh_token',
+        'field_of_study',
+        'subject_areas',
+        'expertise_keywords',
+        'experience_years',
+        'reviews_completed',
+    ];
+
+    /**
+     * The attributes that should be hidden for serialization.
+     *
+     * @var array<int, string>
+     */
+    protected $hidden = [
+        'password',
+        'remember_token',
+        'google2fa_secret',
+    ];
+
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+        'last_seen' => 'datetime',
+        'subject_areas' => 'array',
+        'expertise_keywords' => 'array',
+    ];
+
+    protected static function boot()
+    {
+        parent::boot();
+        self::creating(function ($model) {
+            $model->uuid = Str::uuid()->toString();
+        });
+    }
+
+    public function userDetail()
+    {
+        return $this->hasOne(UserDetails::class);
+    }
+    public function order()
+    {
+        return $this->belongsTo(SubscriptionOrder::class, 'id', 'user_id');
+    }
+
+    public function clientOrders()
+    {
+        return $this->hasMany(ClientOrder::class);
+    }
+
+    public function clientInvoice()
+    {
+        return $this->hasMany(ClientInvoice::class);
+    }
+
+    public function reviewerNotes()
+    {
+        return $this->hasMany(SubmissionReviewerNotes::class, 'created_by');
+    }
+
+    public function reviews()
+    {
+        return $this->hasMany(Reviews::class, 'reviewer_id');
+    }
+}

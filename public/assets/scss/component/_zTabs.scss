@@ -1,0 +1,258 @@
+.zTab {
+    &-reset {
+        --bs-nav-link-padding-x: 0;
+        --bs-nav-link-padding-y: 0;
+        --bs-nav-link-font-weight: 400;
+        --bs-nav-link-color: #fff;
+        --bs-nav-tabs-border-width: 0;
+        --bs-nav-tabs-border-color: #fff;
+        --bs-nav-tabs-border-radius: 0;
+        --bs-nav-tabs-link-active-color: #fff;
+        --bs-nav-tabs-link-active-bg: #fff;
+        flex-wrap: nowrap;
+        border-bottom: none;
+    }
+    &-border {
+        &-one {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                max-width: toRem(688);
+                height: toRem(1);
+                background-color: $stroke;
+            }
+        }
+    }
+    &-one {
+        // gap: toRem(10);
+        // overflow-x: auto;
+        // border-bottom: toRem(1) solid $stroke;
+        // padding-bottom: toRem(20);
+        // margin-bottom: toRem(20);
+        .nav {
+            &-link {
+                position: relative;
+                padding: toRem(0) toRem(32) toRem(15);
+                background-color: transparent;
+                border-radius: 0;
+                white-space: nowrap;
+                @include fontFamily(14, $fw_semiBold, 24, $para-text);
+                display: flex;
+                align-items: center;
+                gap: toRem(10);
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0%;
+                    height: toRem(2);
+                    background-color: $main-color;
+                    transition: all 0.3s;
+                }
+                &.active {
+                    background-color: transparent;
+                    color: $main-color;
+                    &::before {
+                        width: 100%;
+                    }
+                    svg {
+                        circle {
+                            stroke: $main-color;
+                        }
+                        path {
+                            fill: $main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-two {
+        .nav {
+            &-link {
+                position: relative;
+                padding: toRem(0) toRem(15) toRem(29);
+                background-color: transparent;
+                border-radius: 0;
+                white-space: nowrap;
+                @include fontFamily(14, $fw_semiBold, 24, $para-text);
+                display: flex;
+                align-items: center;
+                gap: toRem(10);
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0%;
+                    height: toRem(2);
+                    background-color: $main-color;
+                    transition: all 0.3s;
+                }
+                &.active {
+                    background-color: transparent;
+                    color: $main-color;
+                    &::before {
+                        width: 100%;
+                    }
+                    svg {
+                        circle {
+                            stroke: $main-color;
+                        }
+                        path {
+                            fill: $main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-three {
+        gap: toRem(13);
+        flex-wrap: wrap;
+        margin-bottom: toRem(35);
+        @media screen and (max-width: 575px) {
+            flex-direction: column;
+        }
+        .nav {
+            &-item {
+                flex: 1 0 auto;
+                max-width: toRem(151);
+                @media screen and (max-width: 575px) {
+                    max-width: 100%;
+                }
+            }
+            &-link {
+                width: 100%;
+                border: none;
+                padding: 0;
+                background-color: transparent;
+                label {
+                    cursor: pointer;
+                    width: 100%;
+                    padding: toRem(20) toRem(38);
+                    background-color: $white;
+                    border: toRem(1) solid $stroke;
+                    border-radius: toRem(8);
+                    white-space: nowrap;
+                    @include fontFamily(14, $fw_semiBold, 24, $main-color);
+                    @media screen and (max-width: 575px) {
+                        padding: toRem(20);
+                    }
+                }
+                &.active {
+                    label {
+                        border-color: $main-color;
+                    }
+                }
+                input {
+                    display: none;
+                }
+            }
+        }
+    }
+    &-four {
+        @media screen and (max-width: 575px) {
+            justify-content: center;
+            gap: toRem(10);
+            padding-bottom: toRem(20);
+        }
+        .nav {
+            &-link {
+                position: relative;
+                padding: toRem(0) toRem(15) toRem(29);
+                background-color: transparent;
+                border-radius: 0;
+                white-space: nowrap;
+                @include fontFamily(14, $fw_semiBold, 24, $para-text);
+                display: flex;
+                align-items: center;
+                gap: toRem(10);
+                @media screen and (max-width: 575px) {
+                    padding: toRem(10);
+                    background-color: $white;
+                    border-radius: toRem(5);
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0%;
+                    height: toRem(2);
+                    background-color: $main-color;
+                    transition: all 0.3s;
+                    @media screen and (max-width: 575px) {
+                        display: none;
+                    }
+                }
+                &.active {
+                    background-color: transparent;
+                    color: $main-color;
+                    @media screen and (max-width: 575px) {
+                        background-color: $main-color !important;
+                        color: $white;
+                    }
+                    &::before {
+                        width: 100%;
+                    }
+                    svg {
+                        circle {
+                            stroke: $main-color;
+                        }
+                        path {
+                            fill: $main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-serviceIcon {
+        .nav {
+            &-link {
+                &.active {
+                    svg {
+                        path {
+                            fill: $title-black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-vertical {
+        &-one {
+            flex: 1 0 auto;
+            @media screen and (min-width: 992px) {
+                max-width: toRem(482);
+                width: 100%;
+            }
+            .nav-link {
+                background-color: $white;
+                border-radius: toRem(25);
+                padding: toRem(50) toRem(43);
+                text-align: left;
+                @include fontFamily(24, $fw_semiBold, 38, $title-black);
+                @media screen and (max-width: 1399px) {
+                    padding: toRem(45) toRem(43);
+                }
+                @media screen and (max-width: 1199px) {
+                    padding: toRem(30);
+                }
+                @media screen and (max-width: 991px) {
+                    padding: toRem(10);
+                    border-radius: toRem(10);
+                    font-size: toRem(20);
+                    line-height: toRem(30);
+                }
+            }
+        }
+    }
+}

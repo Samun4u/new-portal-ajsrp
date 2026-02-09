@@ -1,0 +1,1555 @@
+.submit-section {
+    padding: 20px 30px;
+    color: #333;
+}
+
+.submit-tab-content {
+    gap: 30px;
+    width: 100%;
+}
+
+.submit-tabs .nav {
+    background: #f1f2f8;
+    border-radius: 6px;
+    border-top: 3px solid #1476ad;
+    width: 320px;
+}
+
+.submit-tabs .nav h4 {
+    color: #333;
+    font-size: 20px;
+    line-height: 54px;
+    border-bottom: 1px solid #e6e6e6;
+    font-weight: 700;
+    padding: 0 20px;
+}
+
+.submit-tabs .nav button {
+    font-size: 16px;
+    line-height: 50px;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: left;
+    border-radius: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    margin: 0 15px;
+}
+
+.submit-tabs .nav button:last-child {
+    border-bottom: 0;
+}
+
+.submit-tabs .nav button.active {
+    background: none;
+    color: #0077c2;
+    font-weight: 700;
+}
+
+.submit-tabs .nav button:hover {
+    color: #0077c2;
+}
+
+.submit-tabs .tab-content {
+    width: calc(100% - 320px);
+}
+
+.header-title {
+    border-bottom: 1px solid #b3bbcb;
+    margin-bottom: 30px;
+}
+
+.submit-tabs .tab-content h2 {
+    font-size: 28px;
+    padding-bottom: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+.submit-tabs .tab-content h5 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    line-height: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b3bbcb;
+}
+
+.submit-tabs .add-one-more {
+    color: #0e9960;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 0;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.submit-tabs .add-one-more span {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0e9960;
+    color: #fff;
+}
+
+.step-one .step-one-tabs {
+    padding-top: 30px;
+}
+
+.step-one .step-one-tabs .nav {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    padding: 0 20px;
+    padding-top: 10px;
+}
+
+.step-one .step-one-tabs .nav button {
+    padding: 0 20px;
+    font-size: 17px;
+    line-height: 53px;
+    margin: 0;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+.step-one .step-one-tabs .nav button.active {
+    border-top: 4px solid #0077c2;
+    border-left: 1px solid #dae1ef;
+    border-right: 1px solid #dae1ef;
+    background: #fff;
+}
+
+.step-one-tab-one {
+    padding-top: 20px;
+}
+
+.submit-tabs .tab-content .step-one-tab-one h5 {
+    border: 0;
+}
+
+.step-one-tab-one ul.ul-list-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.step-one-tab-one ul li {
+    font-size: 17px;
+    line-height: 28px;
+    color: #333;
+    transition: all linear 0.1s;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: 500;
+    display: inline-flex;
+}
+
+.step-one-tab-one ul.ul-list-item li:hover {
+    background: #dcecf7;
+    color: #006bb3;
+}
+
+.step-one-tab-one ul li.active {
+    background: #dcecf7;
+    color: #006bb3;
+}
+
+.step-one-tab-one ul.ul-list-item li label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.step-one-tab-one ul.ul-list-item li input {
+    width: 16px;
+    height: 16px;
+}
+
+.submit-tabs .tab-content .tab-content {
+    width: 100%;
+}
+
+.step-one-search-data {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.step-one-data-search {
+    position: relative;
+}
+
+.step-one-data-search input {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 17px;
+    line-height: 28px;
+    color: #333;
+    border: 2px solid #7dacf0;
+    border-radius: 10px;
+}
+
+.step-one-data-search button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.step-one-search-data-content {
+    margin-top: 20px;
+}
+
+.step-one-search-data-content h4 {
+    font-size: 17px;
+    line-height: 28px;
+    color: #333;
+    font-weight: 600;
+}
+
+.step-one-search-data-content ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 0;
+}
+
+.step-one-search-data-content ul li:nth-child(even) {
+    background: #fff;
+}
+
+.step-one-search-data-content ul li label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.step-one-search-data-content ul li input {
+    width: 16px;
+    height: 16px;
+}
+
+.step-one-search-data-content ul li .left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.step-one-search-data-content ul li {
+    padding: 14px 10px;
+}
+
+.step-one-search-data-content ul li a {
+    font-weight: 700;
+    color: #006bb3;
+}
+
+.submit-tabs .continue-button {
+    margin-top: 40px;
+    padding-top: 40px;
+    margin-bottom: 30px;
+    border-top: 1px solid #0073ac;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.submit-tabs .step-one .continue-button {
+    justify-content: end;
+}
+
+.submit-tabs .continue-button .continue {
+    font-size: 24px;
+    line-height: 55px;
+    padding: 0 24px;
+    border: 2px solid #007eb4;
+    color: #fff;
+    background: #007eb4;
+    font-weight: 700;
+}
+
+.submit-tabs .continue-button .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.submit-tabs .continue-button .previous {
+    font-size: 24px;
+    line-height: 55px;
+    padding: 0 24px;
+    border: 2px solid #007eb4;
+    color: #007eb4;
+    font-weight: 700;
+    background: #fff;
+}
+
+.step-one-search-data-content ul .select-item {
+    padding: 15px;
+    background: #0ca0b1;
+    border-radius: 6px;
+    margin: 5px 0;
+    margin-top: 15px;
+    position: relative;
+}
+
+.step-one-search-data-content ul .select-item::after {
+    border-style: solid;
+    border-width: 0 8px 6px 8px;
+    border-color: transparent transparent #0ca0b1 transparent;
+    position: absolute;
+    top: -6px;
+    left: 20px;
+    content: "";
+}
+
+.step-one-search-data-content ul .select-item h4 {
+    color: #fff;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.step-one-search-data-content ul .select-item h4 i {
+    padding-top: 5px;
+}
+
+.step-one-search-data-content ul .select-item .select-item-btn {
+    display: inline-block;
+    background: #eafdff;
+    line-height: 46px;
+    padding: 0 14px;
+    border-radius: 5px;
+    color: #006975;
+    box-shadow: 3px 4px 16px rgb(0 57 64 / 12%);
+    font-size: 22px;
+    cursor: pointer;
+    border: 0;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.step-one-search-data-content ul .select-item .select-item-btn:hover {
+    text-decoration: underline;
+}
+
+.step-one-search-data-content ul .select-item .select-item-title {
+    display: block;
+}
+
+.step-one-tab-one.two .step-one-search-data {
+    margin-top: 0;
+}
+
+.a-to-z {
+    display: flex;
+    margin-top: 20px;
+}
+
+.a-to-z span {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #ddd;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #00599c;
+}
+
+.a-to-z span.gray {
+    color: #aaa;
+}
+
+.submit-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.submit-section form label {
+    font-size: 17px;
+    line-height: 28px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.submit-section form label span {
+    color: #bc0000;
+}
+
+.submit-section form :where(input, select, textarea) {
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333;
+    border: 1px solid #595959;
+    padding: 10px;
+}
+
+.submit-section form h4 {
+    margin-top: 5px;
+    font-size: 17px;
+    line-height: 28px;
+    color: #333;
+}
+
+/* step-three */
+
+.step-three .step-three-file-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step-three h3 {
+    color: #333;
+    font-size: 22px;
+    border-left: 5px solid #273a5f;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.step-three h3 span {
+    color: #bc0000;
+}
+
+.step-three-file-upload-card {
+    background: #ecf0f7;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.step-three-file-upload-card h4 {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    font-weight: 700;
+    padding-bottom: 12px;
+}
+
+.step-three-file-upload-left {
+    width: 270px;
+}
+
+.step-three-file-upload-card h4 span {
+    color: #bc0000;
+}
+
+.step-three-file-upload-card-white {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.step-three-file-upload-card-white ul li {
+    border-bottom: 1px solid #ccc;
+    font-size: 15px;
+    line-height: 30px;
+    color: #333;
+    padding: 2px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.step-three-file-upload-right {
+    width: calc(100% - 270px);
+    position: relative;
+}
+
+.step-three-file-upload-right .upload-file {
+    cursor: pointer;
+    height: 46px;
+    width: 155px;
+    padding: 0;
+    background-color: #007eb4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 4px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    position: relative;
+    color: #fff;
+    border: 0;
+}
+
+.step-three-file-upload-right .upload-file input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.step-three-file-upload-right .after-upload {
+    padding-top: 20px;
+}
+
+.step-three-file-upload-card .delete-file {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    color: #007eb4;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+
+.step-three-file-upload-card .delete-file:hover {
+    text-decoration: underline;
+}
+
+.step-three-file-upload-right .after-upload h6.alert {
+    color: red;
+    font-size: 15px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.step-three-file-upload-right .after-upload p {
+    padding-top: 16px;
+    color: #666;
+}
+
+.step-three-file-upload-right .after-upload p a {
+    font-weight: 700;
+    color: #00599c;
+}
+
+.step-three-file-upload-right .after-upload p a:hover {
+    text-decoration: underline;
+}
+
+/* step-four */
+.step-four h3 {
+    color: #333;
+    font-size: 22px;
+    margin-top: 20px;
+    border-left: 5px solid #273a5f;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.step-four-bg {
+    background: #ecf0f7;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.step-four-bg .step-four-bg-white {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.step-four-bg .step-four-bg-white h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.step-four-bg-white ul.ul-input-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.step-four-bg-white ul.ul-input-list li label {
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.step-four-bg-white ul.ul-input-list li:nth-child(5) {
+    grid-column: span 2;
+}
+
+.step-four-bg-white ul.ul-input-list li:nth-child(5) .d-flex {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.step-four-bg-white ul.ul-input-list li:nth-child(5) .d-flex .input-file {
+    width: 86%;
+}
+
+.step-four-bg-white ul.ul-input-list li:nth-child(5) .d-flex button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #0073ac;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 15px;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+    border: 0;
+}
+
+.step-four-bg-white ul li:nth-child(5) p {
+    padding-top: 5px;
+}
+
+.step-four-bg-white h6 {
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.step-four-bg-white .contributor-bg {
+    background: #d9edf7;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    margin-top: -18px;
+    position: relative;
+}
+
+.step-four-bg-white .contributor-bg::after {
+    position: absolute;
+    content: "";
+    top: -6px;
+    left: 15px;
+    border-style: solid;
+    border-width: 0 8px 6px 8px;
+    border-color: transparent transparent #d9edf7 transparent;
+}
+
+.step-four-bg-white .step-four-check-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 20px;
+}
+
+.step-four-bg-white .step-four-check-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.step-four-check-list li label {
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.step-four-check-list li input {
+    width: 16px;
+    height: 16px;
+}
+
+.step-four .corresponding-author {
+    font-size: 17px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.step-four .corresponding-author label {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.step-four .corresponding-author input {
+    height: 20px;
+    width: 20px;
+}
+
+.step-four-bg-white .heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.step-four-bg-white .heading h6 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.step-four-bg-white .heading button {
+    margin-left: 20px;
+    color: #da4f49;
+    font-size: 15px;
+    border: 0;
+    background: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.step-four-bg-white .heading button span {
+    background: #da4f49;
+    padding: 0 6px;
+    line-height: 26px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.step-four-bg-white .heading button:hover {
+    text-decoration: underline;
+}
+
+/* step-five */
+.step-five h3 {
+    color: #333;
+    font-size: 22px;
+    border-left: 5px solid #273a5f;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.step-five h3 span {
+    color: #bc0000;
+}
+
+.submit-tabs .tab-content .step-five h5 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border: 0;
+}
+
+.step-five-bg-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step-five-bg-content .step-five-item {
+    background: #d9edf7;
+    padding: 16px;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.step-five-bg-content .step-five-item label {
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: start;
+    font-weight: 600;
+    gap: 10px;
+    padding-bottom: 0;
+}
+
+.step-five-bg-content .step-five-item label h6 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.step-five-bg-content .step-five-item label h6 a {
+    font-weight: 700;
+    color: #00599c;
+}
+
+.step-five-bg-content .step-five-item label h6 a:hover {
+    text-decoration: underline;
+}
+
+.step-five-bg-content .step-five-item label input {
+    width: 20px;
+    height: 20px;
+}
+
+.step-five-bg-content .step-five-item label span {
+    font-size: 20px;
+    color: #bc0000;
+}
+
+.step-five-bg-content .step-five-item label .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.step-five .step-five-list {
+    margin-top: 50px;
+}
+
+.step-five .step-five-list li {
+    padding: 50px 0;
+    border-top: 1px solid #ddd;
+}
+
+.step-five .step-five-list h6 {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 500;
+    background: #d9edf7;
+    padding: 16px;
+    border-radius: 6px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.step-five .step-five-list h6::after {
+    position: absolute;
+    top: -6px;
+    left: 15px;
+    content: "";
+    border-style: solid;
+    border-width: 0 8px 6px 8px;
+    border-color: transparent transparent #d9edf7 transparent;
+}
+
+.step-five .step-five-list a {
+    font-weight: 700;
+    color: #00599c;
+}
+
+.step-five .step-five-list a:hover {
+    text-decoration: underline;
+}
+
+.step-five .step-five-list .yes-no {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.step-five .step-five-list .yes-no label {
+    font-size: 17px;
+    line-height: 28px;
+    cursor: pointer;
+    width: 56px;
+}
+
+.step-five .step-five-list textarea {
+    width: 100%;
+    font-size: 12px;
+    color: #333;
+    border: 1px solid #595959;
+    outline: 0;
+    padding-top: 6px;
+    text-indent: 10px;
+}
+
+.step-five .step-five-list .step-five-bg label {
+    width: auto;
+}
+
+.step-five .step-five-list .step-five-bg li {
+    padding: 0;
+    padding-top: 10px;
+}
+
+.step-five .yes-no .step-four-bg {
+    margin-top: 10px;
+}
+
+.step-five-data-availability {
+    margin-top: 16px;
+}
+
+.step-five-data-availability input:nth-child(1) {
+    width: 14px;
+    height: 14px;
+}
+
+.step-five-data-availability input {
+    width: 400px;
+    padding: 8px 10px;
+    font-size: 12px;
+    color: #333;
+    border: 1px solid #595959;
+}
+
+.step-five-data-availability label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+/* step six */
+.submit-tabs .nav button.step-six-button {
+    flex-direction: column;
+    align-items: start;
+}
+
+.step-six-button ul li {
+    margin-top: -25px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+.step-six-button ul li .nav-link {
+    background: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: left;
+    border-radius: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    margin: 0 15px;
+}
+
+.step-six-button ul li .nav-link.active {
+    background: none;
+    color: #0077c2;
+    font-weight: 700;
+}
+
+.step-six .header-title {
+    border-bottom: 0;
+}
+
+.header-title h4 {
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.step-six-reviewer-criteria h4 {
+    color: #333;
+    font-size: 22px;
+    border-left: 5px solid #273a5f;
+    padding-left: 10px;
+}
+
+.step-six-reviewer-criteria ul {
+    margin-top: 24px;
+}
+
+.step-six-reviewer-criteria ul li {
+    padding-left: 20px;
+    font-size: 17px;
+    line-height: 28px;
+    position: relative;
+}
+
+.step-six-reviewer-criteria ul li::before {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #333;
+    border-radius: 50%;
+}
+
+/* step-six-sub-one */
+.step-six-sub-one .step-six-reviewer-criteria {
+    margin-top: 0;
+    border-bottom: 1px solid #b3bbcb;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+
+.step-six-sub-one-bg {
+    background: #ecf0f7;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.step-six-sub-one-bg-white {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.step-six-sub-one-bg-white .heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.step-six-sub-one-bg-white .heading h6 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.step-six-sub-one-bg-white .heading button {
+    margin-left: 20px;
+    color: #da4f49;
+    font-size: 15px;
+    border: 0;
+    background: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.step-six-sub-one-bg-white .heading button span {
+    background: #da4f49;
+    padding: 0 6px;
+    line-height: 26px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.step-six-sub-one-bg-white .heading button:hover {
+    text-decoration: underline;
+}
+
+.step-six-sub-one-bg-white .form-input {
+    gap: 16px;
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.step-six-sub-one-bg-white .form-input li:nth-child(1) {
+    grid-column: span 3;
+}
+
+.step-six-sub-one-bg-white .form-input li:nth-child(2) {
+    grid-column: span 3;
+}
+
+.step-six-sub-one-bg-white .form-input li:nth-child(6) {
+    grid-column: span 3;
+}
+
+.step-six-sub-one-bg-white .form-input input {
+    font-size: 12px;
+    color: #333;
+    border: 1px solid #595959;
+    outline: 0;
+    width: 100%;
+    height: 40px;
+    text-indent: 10px;
+}
+
+/* step-six-sub-two */
+.step-six-sub-two .header-title h6 {
+    padding-bottom: 20px;
+}
+
+.step-six-sub-two .yes-no {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.step-six-sub-two .yes-no label {
+    cursor: pointer;
+    width: 55px;
+}
+
+.step-six-sub-two .step-six-sub-one-bg-white .form-input li:nth-child(1) {
+    grid-column: span 1;
+}
+
+.step-six-sub-two .step-six-sub-one-bg-white .form-input li:nth-child(2) {
+    grid-column: span 1;
+}
+
+.step-six-sub-two .step-six-sub-one-bg-white .form-input li:nth-child(5) {
+    grid-column: span 3;
+}
+
+.step-six-sub-two .step-six-sub-one-bg-white .form-input li:nth-child(4) {
+    grid-column: span 3;
+}
+
+.step-six-sub-two .step-six-sub-one-bg-white .form-input li p span {
+    color: #bc0000;
+}
+
+/* step-seven */
+.step-seven h4 {
+    padding-bottom: 20px;
+}
+
+.step-seven-content {
+    margin-top: 20px;
+}
+
+.step-seven-content h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.step-seven-content h3 i {
+    color: #059a60;
+    font-weight: 700;
+}
+
+.step-seven-content table {
+    width: 100%;
+    border: 1px solid #e9ecf3;
+}
+
+.step-seven-content .heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.step-seven-content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.step-seven-content .heading h3 {
+    padding-bottom: 0;
+}
+
+.step-seven-content .heading a {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    line-height: 32px;
+    border-radius: 4px;
+    padding: 0 10px;
+    background: #007eb4;
+    color: #fff;
+    cursor: pointer;
+}
+
+.step-seven-content .heading a:hover,
+.step-seven-content table td button:hover {
+    text-decoration: underline;
+}
+
+.step-seven-content table th {
+    line-height: 50px;
+    padding-left: 15px;
+    border-right: 1px solid #e9ecf3;
+    background: #f3f5f9;
+}
+
+.step-seven-content table td {
+    padding: 15px;
+    border-right: 1px solid #e9ecf3;
+    border-bottom: 1px solid #e9ecf3;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.step-seven-content table td a {
+    font-weight: 700;
+    font-style: italic;
+    color: #006db4;
+}
+
+.step-seven-content table td button {
+    color: #006db4;
+    background: none;
+    border: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+}
+
+.step-seven-content table td.step-four-table h6 {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 15px;
+}
+
+.step-seven-content table td.step-four-table p {
+    font-size: 15px;
+    display: inline-block;
+    background: #def3fc;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.step-seven-content table td.step-four-table h5 {
+    border: 0;
+    padding: 0;
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.step-seven-content table td.step-four-table a {
+    font-style: normal;
+}
+
+.step-seven-content .step-five-declaration {
+    background: #ecf0f7;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.step-seven-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step-seven-content ul li {
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.step-seven-content ul li i {
+    color: #0e9960;
+    margin-top: 3px;
+}
+
+.step-seven-content ul li p {
+    width: 90%;
+}
+
+.step-seven-content ul li p a,
+.step-seven-content ul li p i {
+    color: #00599c;
+    font-weight: 700;
+}
+
+.step-seven-content ul li p a:hover {
+    text-decoration: underline;
+}
+
+.step-seven-content table td .table-data-step-six {
+    color: red;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.step-seven-content table td .table-data-step-six a {
+    color: #006db4;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.step-seven-content table td .table-data-step-six a:hover {
+    text-decoration: underline;
+}
+
+.step-seven-submit .success-message {
+    background: #def0d8;
+    width: 600px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    color: #0e9960;
+}
+
+.step-seven-submit .success-message h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0e9960;
+}
+
+.step-seven-submit .success-message h5 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+    color: #0e9960;
+}
+
+.step-seven-submit a {
+    color: #00599c;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    cursor: pointer;
+}
+
+.step-seven-submit a:hover {
+    text-decoration: underline;
+}
+
+.step-seven-submit .view-status {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.step-seven-submit h3 {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 700;
+    padding-bottom: 0;
+}
+
+.step-seven-submit p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.step-seven-submit p a{
+    margin: 0 5px;
+
+}
+
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .submit-section {
+      padding: 15px;
+    }
+    
+    .submit-tab-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .submit-tabs .nav {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .submit-tabs .tab-content {
+      width: 100%;
+    }
+    
+    .step-one .step-one-tabs .nav {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding: 0 10px;
+    }
+    
+    .step-one-tab-one ul.ul-list-item {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .submit-tabs .continue-button {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+    
+    .submit-tabs .continue-button .continue,
+    .submit-tabs .continue-button .previous {
+      width: 100%;
+      font-size: 20px;
+      line-height: 45px;
+    }
+    
+    .step-four-bg-white ul.ul-input-list,
+    .step-six-sub-one-bg-white .form-input {
+      grid-template-columns: 1fr;
+      display: block !important;
+    }
+    
+    .step-four-bg-white .step-four-check-list {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .step-three-file-upload-card-white {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .step-three-file-upload-left,
+    .step-three-file-upload-right {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .submit-tabs .nav h4 {
+      font-size: 18px;
+      padding: 0 15px;
+    }
+    
+    .submit-tabs .nav button {
+      font-size: 15px;
+      margin: 0 10px;
+    }
+    
+    .submit-tabs .tab-content h2 {
+      font-size: 24px;
+    }
+    
+    .submit-tabs .tab-content h5 {
+      font-size: 16px;
+    }
+    
+    .step-one-tab-one ul.ul-list-item {
+      grid-template-columns: 1fr;
+    }
+    
+    .a-to-z {
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    
+    .a-to-z span {
+      border-right: none;
+      padding-right: 5px;
+      margin-right: 5px;
+    }
+    
+    .step-four-bg-white .step-four-check-list {
+      grid-template-columns: 1fr !important;
+    }
+    
+    .step-seven-content table {
+      /* display: block; */
+      overflow-x: auto;
+      /* white-space: nowrap; */
+    }
+    
+    .step-seven-content .heading {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .step-seven-submit .success-message {
+      width: 100%;
+    }
+    
+    .step-three-file-upload-right .upload-file {
+      width: 100%;
+    }
+    
+    .step-six-sub-one-bg-white .form-input li,
+    .step-four-bg-white ul.ul-input-list li:nth-child(5) .d-flex .input-file {
+      width: 100%;
+    }
+
+    .step-six-sub-one-bg-white .form-input input {
+        margin-bottom: 5px !important;
+    }
+    
+    .step-four-bg-white ul.ul-input-list li:nth-child(5) .d-flex {
+      flex-direction: column;
+    }
+    
+    .step-four-bg-white ul.ul-input-list li:nth-child(5) .d-flex button {
+      width: 100%;
+      position: static;
+    }
+
+    .step-seven-content table td button {
+        /* Prevent overflow */
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 100%;  /* Prevent button from expanding beyond parent cell */
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .truncate-url {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;  /* Add ellipsis for long URLs */
+        display: inline-block;    /* Keep it inline */
+        max-width: 150px;         /* Adjust based on your needs */
+    }
+
+    .step-seven-content ul li p a{
+        display: inline-block;      /* Allow width control */
+        max-width: 100%;            /* Prevent exceeding parent width */
+        overflow: hidden;           /* Hide overflowing text */
+        white-space: nowrap;        /* Prevent text wrapping */
+        text-overflow: ellipsis;    /* Add "..." when the text is cut off */
+    }
+  }
+  
+  /* Additional Mobile Tweaks */
+  @media (max-width: 360px) {
+    .submit-tabs .nav button {
+      font-size: 14px;
+      gap: 5px;
+    }
+    
+    .submit-tabs .tab-content h2 {
+      font-size: 22px;
+    }
+    
+    .submit-tabs .add-one-more {
+      font-size: 15px;
+    }
+    
+    .step-seven-content table td {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+
+
+  @media (max-width: 480px) {
+    /* Make continue buttons stack vertically */
+    .continue-button .right {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .continue-button .right button {
+      width: 100%;
+    }
+  }
+

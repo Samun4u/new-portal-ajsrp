@@ -1,0 +1,56 @@
+.zMain {
+  &-signLog {
+    // &-wrap {
+    //   min-height: 100vh;
+    //   max-height: 100vh;
+    // }
+    &-content {
+      max-width: toRem(491);
+      margin: 0 auto;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    // &-img {
+    //   height: 100vh;
+    //   &[data-background] {
+    //     background-size: contain;
+    //   }
+    // }
+  }
+}
+
+.signLog-section {
+  height: 100vh;
+  display: flex;
+  background-color: #fff;
+  overflow-y: hidden;
+  .left,
+  .right {
+    width: 50%;
+    height: 100%;
+  }
+  .left {
+    padding: 30px;
+    border-radius: toRem(20);
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 575px) {
+      padding: 10px;
+    }
+    .wrap {
+      height: 100%;
+      background-color: $body-bg;
+      border-radius: toRem(20);
+      padding: 0 20px;
+    }
+  }
+  .right {
+    position: relative;
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,233 @@
+.custom-color .bd-c-stroke {
+    border-color: var(--para-text) !important;
+}
+.custom-color .text-title-black {
+    color: var(--para-text) !important;
+}
+.custom-color .zTable thead tr th {
+    color: var(--para-text) !important;
+}
+.custom-color .zForm-label {
+    color: var(--para-text) !important;
+}
+.custom-color .zForm-control {
+    color: var(--para-text) !important;
+    background-color: var(--white) !important;
+    border: 0.0625rem solid var(--stroke) !important;
+}
+.custom-color .breadcrumb.sf-breadcrumb {
+    --bs-breadcrumb-divider-color: var(--para-text) !important;
+    --bs-breadcrumb-item-active-color: var(--para-text) !important;
+    color: var(--para-text) !important;
+}
+.custom-color .bg-white {
+    background-color: var(--body-bg) !important;
+    border: 0.03125rem solid var(--para-text) !important;
+}
+.custom-color .sf-select-without-search {
+    background-color: var(--body-bg) !important;
+    border: 0.0625rem solid var(--para-text) !important;
+    color: var(--para-text) !important;
+}
+.custom-color .sf-select-without-search.open .list {
+    border: 0.0625rem solid var(--para-text) !important;
+    background-color: var(--body-bg) !important;
+}
+.custom-color .zForm-control {
+    color: var(--para-text) !important;
+    background-color: var(--body-bg) !important;
+    border: 0.0625rem solid var(--para-text) !important;
+}
+
+.custom-color .table>:not(caption)>*>*{
+    background-color: var(--body-bg) !important;
+}
+
+.custom-color .zSidebar {
+    background-color: var(--sidebar-bg) !important;
+}
+
+.custom-color .zList-three li {
+border-bottom: 0.0625rem solid var(--para-text) !important;
+}
+
+.custom-color .modal-content{
+    background-color: var(--body-bg) !important;
+}
+
+.custom-color .landing-header {
+
+    background-color: var(--header-color) !important;
+}
+.custom-color .landing-section-title {
+    color: var(--para-text) !important;
+}
+.custom-color .features-list-item .title {
+    color: var(--para-text) !important;
+}
+.custom-color .features-block-item .item-content .lists li .content .title {
+    color: var(--para-text) !important;
+}
+.custom-color .features-block-item .item-content .lists li .content .info {
+    color: var(--para-text) !important;
+}
+.custom-color .landing-coreFeatures-tabContent .content .title {
+    color: var(--para-text) !important;
+}
+.custom-color .zTab-vertical-one .nav-link {
+    color: var(--para-text) !important;
+}
+.custom-color .text-title-black {
+    color: var(--para-text) !important;
+}
+.custom-color .price-plan-one .price-head .title {
+    color: var(--para-text) !important;
+}
+.custom-color .price-plan-one .price-head .plan-price {
+    color: var(--para-text) !important;
+}
+.custom-color .price-plan-one .price-head .plan-price span {
+    color: var(--para-text) !important;
+}
+.custom-color .landing-testimonial-item .top .user .content .name {
+    color: var(--para-text) !important;
+}
+.custom-color .landing-testimonial-item .text {
+    color: var(--para-text) !important;
+}
+.custom-color .landing-testimonial-item .bottom .content .testi-company {
+    color: var(--para-text) !important;
+}
+.custom-color .landing-testimonial-item .top .user .content .userUrl {
+    color: var(--para-text) !important;
+}
+.custom-color .landing-testimonial-item .bottom .content .date {
+    color: var(--para-text) !important;
+}
+.custom-color .zAccordion-one .accordion-button {
+    color: var(--para-text) !important;
+}
+.custom-color .landing-menu-navbar-nav li a {
+    color: var(--para-text) !important;
+}
+.custom-color .bg-title-black {
+    background-color: var(--main-color) !important;
+}
+.custom-color .text-white {
+    color: var(--para-text) !important;
+}
+.custom-color .headerUserDropdown {
+    background-color: var(--main-color) !important;
+}
+.custom-color .lanDropdown {
+    border: 0.0625rem solid var(--para-text) !important;
+    background-color: var(--main-color) !important;
+}
+.custom-color .text-black {
+    color: var(--para-text) !important;
+}
+.custom-color .zImage-upload-details .upload-img-box {
+    background-color: var(--body-bg) !important;
+    border: 0.125rem dashed var(--para-text) !important;
+}
+.custom-color .search-one input {
+    border: 0.0625rem solid var(--para-text) !important;
+    background-color: var(--body-bg) !important;
+    color: var(--para-text) !important;
+}
+.custom-color .sf-select-section.select2-selection--single {
+    background-color: var(--body-bg);
+    border: 1px solid var(--para-text) !important;
+}
+.custom-color .sf-select-dropdown {
+    border-color: var(--para-text) !important;
+    background-color: var(--body-bg) !important;
+}
+.custom-color .landing-footer-top {
+    background-color: var(--header-color) !important;
+}
+.custom-color .landing-footer {
+    background-color: var(--header-color) !important;
+}
+.custom-color .bg-color6 {
+    background-color: var(--header-color) !important;
+}
+.custom-color .nav-pills .nav-link.active, .custom-color .nav-pills .show>.nav-link {
+    background-color: var(--main-color) !important;
+}
+.custom-color .accordion-item {
+    background-color: var(--body-bg) !important;
+}
+.custom-color .zForm-label {
+    color: var(--para-text) !important;
+}
+.custom-color .dropdown-menu{
+    --bs-dropdown-color: var(--body-bg) !important;
+}
+.custom-color .price-plan-one{
+    background-color: var(--body-bg) !important;
+}
+.custom-color .subscriptionCancel{
+    background-color: var(--main-color) !important;
+}
+.custom-color .notifyDropdown .dropdown-menu {
+    /*background-color: var(--body-bg) !important;*/
+    border: 0.03125rem solid var(--para-text) !important;
+}
+.custom-color .sf-sortable-form .form-builder ul.stage-wrap {
+    border: 1px solid var(--para-text) !important;
+    background-color: var(--body-bg) !important;
+}
+.custom-color .sf-sortable-form .form-builder .cb-wrap ul.frmb-control {
+    border: 0.0625rem solid var(--para-text) !important;
+    background-color: var(--body-bg) !important;
+}
+.custom-color .form-wrap.form-builder .frmb-control li{
+    background-color: var(--body-bg) !important;
+}
+.custom-color .dropdown-menu {
+    --bs-dropdown-bg: var(--body-bg) !important;
+}
+.custom-color .notifyDropdown .dropdown-menu {
+    background-color: var(--body-bg) !important;
+    border: 0.03125rem solid var(--para-text) !important;
+}
+.custom-color .input-group-text {
+    color: var(--bs-body-color);
+    background-color: var(--body-bg) !important;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+}
+
+.custom-color .input-group-text {
+    color: var(--para-text) !important;
+    background-color: var(--body-bg) !important;
+    border: var(--bs-border-width) solid var(--para-text) !important;
+}
+.custom-color .form-control{
+    background-color: var(--body-bg) !important;
+}
+.custom-color .table>:not(caption)>*>* {
+    color: var(--bs-table-color-state, var(--bs-table-color-type, var(--para-text)));
+    background-color: var(--bs-table-bg);
+}
+.custom-color .zBadge-inactive {
+    color: var(--para-text) !important;
+    background-color: var(--main-color) !important;
+}
+.custom-color .zBadge-done, .zBadge-onHold, .zBadge-superAdmin, .zBadge-active, .zBadge-paid, .zBadge-complete {
+    color: var(--para-text) !important;
+    background-color: var(--main-color) !important;
+}
+.custom-color .bg-body {
+    background-color: var(--body-bg) !important;
+}
+.custom-color .features-list-item {
+    background-color: var(--body-bg) !important;
+}
+.custom-color .landing-coreFeatures-tabContent {
+   background-color: var(--body-bg) !important;
+}
+.custom-color .zTab-vertical-one .nav-link {
+    background-color: var(--body-bg) !important;
+    color: var(--para-text) !important;
+}
