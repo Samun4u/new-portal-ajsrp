@@ -256,6 +256,7 @@ Route::group(['prefix' => 'research-submission', 'as' => 'research-submission.']
    Route::get('/', [ResearchSubmissionController::class, 'index'])->name('index');
    Route::get('/data', [ResearchSubmissionController::class, 'getData'])->name('data');
    Route::get('/show/{id}', [ResearchSubmissionController::class, 'show'])->name('show');
+   Route::get('/download-docx/{id}', [ResearchSubmissionController::class, 'downloadDocx'])->name('download-docx');
    Route::post('/approve/{id}', [ResearchSubmissionController::class, 'approve'])->name('approve');
    Route::post('/reject/{id}', [ResearchSubmissionController::class, 'reject'])->name('reject');
 });

@@ -6,10 +6,15 @@
     <div data-aos="fade-up" data-aos-duration="1000" class="p-sm-30 p-15">
         <!-- Header -->
         <div class="d-flex justify-content-between align-items-center pb-20">
-            <h3>{{ __('Research Submission Details') }}</h3>
-            <a href="{{ route('admin.research-submission.index') }}" class="btn btn-secondary">
-                <i class="fas fa-arrow-left"></i> {{ __('Back to List') }}
+            <h1 class="h3 mb-0 text-gray-800">{{ __('Research Submission Details') }}</h1>
+        <div>
+            <a href="{{ route('admin.research-submission.download-docx', $research->id) }}" class="btn btn-success shadow-sm">
+                <i class="fas fa-file-word fa-sm text-white-50"></i> {{ __('Download Word') }}
             </a>
+            <a href="{{ route('admin.research-submission.index') }}" class="btn btn-secondary shadow-sm">
+                <i class="fas fa-arrow-left fa-sm text-white-50"></i> {{ __('Back') }}
+            </a>
+        </div>
         </div>
 
         <div class="row">
@@ -129,14 +134,26 @@
                             </h6>
                             <div class="row">
                                 <div class="col-md-6">
+                                    @if($author->title_en)
+                                    <strong>{{ __('Title (English)') }}:</strong> {{ $author->title_en }}<br>
+                                    @endif
                                     <strong>{{ __('Name (English)') }}:</strong> {{ $author->name_en }}<br>
+                                    @if($author->degree_en)
+                                    <strong>{{ __('Degree (English)') }}:</strong> {{ $author->degree_en }}<br>
+                                    @endif
                                     <strong>{{ __('Email') }}:</strong> {{ $author->email }}<br>
                                     @if($author->phone)
                                     <strong>{{ __('Phone') }}:</strong> {{ $author->phone }}<br>
                                     @endif
                                 </div>
                                 <div class="col-md-6">
+                                    @if($author->title_ar)
+                                    <strong>{{ __('Title (Arabic)') }}:</strong> {{ $author->title_ar }}<br>
+                                    @endif
                                     <strong>{{ __('Name (Arabic)') }}:</strong> {{ $author->name_ar }}<br>
+                                    @if($author->degree_ar)
+                                    <strong>{{ __('Degree (Arabic)') }}:</strong> {{ $author->degree_ar }}<br>
+                                    @endif
                                     @if($author->orcid)
                                     <strong>{{ __('ORCID') }}:</strong> {{ $author->orcid }}<br>
                                     @endif

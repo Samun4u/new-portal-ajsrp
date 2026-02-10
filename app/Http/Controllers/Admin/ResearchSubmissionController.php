@@ -208,5 +208,52 @@ class ResearchSubmissionController extends Controller
             ], 500);
         }
     }
+    /**
+     * Download the research submission as a Word document.
+     */
+    public function downloadDocx($id, \App\Services\ResearchDocxService $docxService)
+    {
+        $research = Research::with(['authors'])->findOrFail($id);
+
+        $researchData = [
+            'research' => [
+                'arabicTitle' => $research->arabic_title,
+                'englishTitle' => $research->english_title,
+                'science' => $research->field,
+                'otherScience' => $research->other_field,
+                'journal' => $research->journal,
+                'keywords' => $research->keywords,
+                'paperIdAr' => $research->paper_id_ar,
+                'paperIdEn' => $research->paper_id_en,
+                'thesisExtraction' => $research->thesis_answer,
+            ],
+            'authors' => []
+        ];
+
+        foreach ($research->authors as $author) {
+            $researchData['authors'][] = [
+                'nameEn' => $author->name_en,
+                'nameAr' => $author->name_ar,
+                'titleEn' => $author->title_en,
+                'titleAr' => $author->title_ar,
+                'email' => $author->email,
+                'phone' => $author->phone,
+                'degreeEn' => $author->degree_en,
+                'degreeAr' => $author->degree_ar,
+                'formattedAffiliationEn' => $author->affiliation_en,
+                'formattedAffiliationAr' => $author->affiliation_ar,
+                'orcid' => $author->orcid,
+                'corresponding' => $author->is_corresponding,
+            ];
+        }
+
+        $filePath = $docxService->generateDocx($researchData);
+
+        if ($filePath && file_exists($filePath)) {
+            return response()->download($filePath)->deleteFileAfterSend(true);
+        }
+
+        return back()->with('error', 'Could not generate document.');
+    }
 }
 

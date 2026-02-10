@@ -90,16 +90,26 @@ class CommonController extends Controller
             // Create author records
             foreach ($researchData['authors'] as $authorData) {
 
-                // $affiliationAr = trim(($authorData['departmentAr'] ?? '') . ' - ' .
-                //              ($authorData['facultyAr'] ?? '') . ' - ' .
-                //              ($authorData['universityAr'] ?? '') . ' - ' .
-                //              ($authorData['country'] ?? ''));
+                $countryCode = $authorData['country'] ?? '';
+                $countryNameAr = $countryCode;
+                $countryNameEn = $countryCode;
+
+                if (!empty($countryCode)) {
+                    $countries = config('countries_data_ar_en');
+                    foreach ($countries as $country) {
+                        if ($country['code'] === $countryCode) {
+                            $countryNameAr = $country['name'];
+                            $countryNameEn = $country['nameEn'];
+                            break;
+                        }
+                    }
+                }
 
                 $affiliationArParts = [
                     $authorData['departmentAr'] ?? '',
                     $authorData['facultyAr'] ?? '',
                     $authorData['universityAr'] ?? '',
-                    $authorData['country'] ?? ''
+                    $countryNameAr
                 ];
 
                 // Remove empty parts
@@ -107,16 +117,11 @@ class CommonController extends Controller
 
                 $affiliationAr = implode(' - ', $affiliationArParts);
 
-                // $affiliationEn = trim(($authorData['departmentEn'] ?? '') . ' - ' .
-                //              ($authorData['facultyEn'] ?? '') . ' - ' .
-                //              ($authorData['universityEn'] ?? '') . ' - ' .
-                //              ($authorData['country'] ?? ''));
-
                 $affiliationEnParts = [
                     $authorData['departmentEn'] ?? '',
                     $authorData['facultyEn'] ?? '',
                     $authorData['universityEn'] ?? '',
-                    $authorData['country'] ?? ''
+                    $countryNameEn
                 ];
 
                 // Remove empty parts
