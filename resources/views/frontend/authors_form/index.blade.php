@@ -1399,41 +1399,118 @@
                             </div>
                         </div>
                     </div>
+                    <!-- First Name: Arabic and English side-by-side -->
                     <div class="field-row">
                         <div class="field-group">
-                            <label class="form-label" for="author-${authorCount}-name-ar">
-                                <span data-lang="ar">الاسم الثلاثي (عربي)</span>
-                                <span data-lang="en" style="display: none;">Full Name (Arabic)</span>
+                            <label class="form-label" for="author-${authorCount}-first-name-ar">
+                                <span data-lang="ar">الاسم الأول (عربي)</span>
+                                <span data-lang="en" style="display: none;">First Name (Arabic)</span>
                                 <span class="required">*</span>
                             </label>
                             <input type="text"
-                                   id="author-${authorCount}-name-ar"
+                                   id="author-${authorCount}-first-name-ar"
                                    class="form-control validate-field"
                                    required
                                    aria-required="true"
                                    data-validation="required"
-                                   data-lang-placeholder-ar="الاسم الأول الأوسط الأخير"
-                                   data-lang-placeholder-en="First Middle Last"
-                                   placeholder="الاسم الأول الأوسط الأخير"
+                                   data-lang-placeholder-ar="الاسم الأول"
+                                   data-lang-placeholder-en="First Name"
+                                   placeholder="الاسم الأول"
                                    lang="ar">
                             <p class="error-message" role="alert"></p>
                             <p class="success-message" role="status"></p>
                         </div>
                         <div class="field-group">
-                            <label class="form-label" for="author-${authorCount}-name-en">
-                                <span data-lang="ar">Full Name (English)</span>
-                                <span data-lang="en" style="display: none;">Full Name (English)</span>
+                            <label class="form-label" for="author-${authorCount}-first-name-en">
+                                <span data-lang="ar">First Name (English)</span>
+                                <span data-lang="en" style="display: none;">First Name (English)</span>
                                 <span class="required">*</span>
                             </label>
                             <input type="text"
-                                   id="author-${authorCount}-name-en"
+                                   id="author-${authorCount}-first-name-en"
                                    class="form-control validate-field"
                                    required
                                    aria-required="true"
                                    data-validation="required"
-                                   data-lang-placeholder-ar="First Middle Last"
-                                   data-lang-placeholder-en="First Middle Last"
-                                   placeholder="First Middle Last"
+                                   data-lang-placeholder-ar="First Name"
+                                   data-lang-placeholder-en="First Name"
+                                   placeholder="First Name"
+                                   lang="en">
+                            <p class="error-message" role="alert"></p>
+                            <p class="success-message" role="status"></p>
+                        </div>
+                    </div>
+
+                    <!-- Middle Name: Arabic and English side-by-side -->
+                    <div class="field-row">
+                        <div class="field-group">
+                            <label class="form-label" for="author-${authorCount}-middle-name-ar">
+                                <span data-lang="ar">الاسم الأوسط (عربي)</span>
+                                <span data-lang="en" style="display: none;">Middle Name (Arabic)</span>
+                            </label>
+                            <input type="text"
+                                   id="author-${authorCount}-middle-name-ar"
+                                   class="form-control"
+                                   data-lang-placeholder-ar="الاسم الأوسط"
+                                   data-lang-placeholder-en="Middle Name"
+                                   placeholder="الاسم الأوسط"
+                                   lang="ar">
+                            <p class="error-message" role="alert"></p>
+                            <p class="success-message" role="status"></p>
+                        </div>
+                        <div class="field-group">
+                            <label class="form-label" for="author-${authorCount}-middle-name-en">
+                                <span data-lang="ar">Middle Name (English)</span>
+                                <span data-lang="en" style="display: none;">Middle Name (English)</span>
+                            </label>
+                            <input type="text"
+                                   id="author-${authorCount}-middle-name-en"
+                                   class="form-control"
+                                   data-lang-placeholder-ar="Middle Name"
+                                   data-lang-placeholder-en="Middle Name"
+                                   placeholder="Middle Name"
+                                   lang="en">
+                            <p class="error-message" role="alert"></p>
+                            <p class="success-message" role="status"></p>
+                        </div>
+                    </div>
+
+                    <!-- Last Name: Arabic and English side-by-side -->
+                    <div class="field-row">
+                        <div class="field-group">
+                            <label class="form-label" for="author-${authorCount}-last-name-ar">
+                                <span data-lang="ar">الاسم الأخير (عربي)</span>
+                                <span data-lang="en" style="display: none;">Last Name (Arabic)</span>
+                                <span class="required">*</span>
+                            </label>
+                            <input type="text"
+                                   id="author-${authorCount}-last-name-ar"
+                                   class="form-control validate-field"
+                                   required
+                                   aria-required="true"
+                                   data-validation="required"
+                                   data-lang-placeholder-ar="الاسم الأخير"
+                                   data-lang-placeholder-en="Last Name"
+                                   placeholder="الاسم الأخير"
+                                   lang="ar">
+                            <p class="error-message" role="alert"></p>
+                            <p class="success-message" role="status"></p>
+                        </div>
+                        <div class="field-group">
+                            <label class="form-label" for="author-${authorCount}-last-name-en">
+                                <span data-lang="ar">Last Name (English)</span>
+                                <span data-lang="en" style="display: none;">Last Name (English)</span>
+                                <span class="required">*</span>
+                            </label>
+                            <input type="text"
+                                   id="author-${authorCount}-last-name-en"
+                                   class="form-control validate-field"
+                                   required
+                                   aria-required="true"
+                                   data-validation="required"
+                                   data-lang-placeholder-ar="Last Name"
+                                   data-lang-placeholder-en="Last Name"
+                                   placeholder="Last Name"
                                    lang="en">
                             <p class="error-message" role="alert"></p>
                             <p class="success-message" role="status"></p>
@@ -2671,8 +2748,17 @@
                         titleEn: titleEn,
                         titleValue: titleValue,
                         titleCustom: titleValue === 'other' ? otherTitleAr : '',
-                        nameAr: document.getElementById(`author-${i}-name-ar`)?.value || '',
-                        nameEn: document.getElementById(`author-${i}-name-en`)?.value || '',
+                        // Concatenate name fields
+                        nameAr: [
+                            document.getElementById(`author-${i}-first-name-ar`)?.value || '',
+                            document.getElementById(`author-${i}-middle-name-ar`)?.value || '',
+                            document.getElementById(`author-${i}-last-name-ar`)?.value || ''
+                        ].filter(Boolean).join(' '),
+                        nameEn: [
+                            document.getElementById(`author-${i}-first-name-en`)?.value || '',
+                            document.getElementById(`author-${i}-middle-name-en`)?.value || '',
+                            document.getElementById(`author-${i}-last-name-en`)?.value || ''
+                        ].filter(Boolean).join(' '),
                         email: document.getElementById(`author-${i}-email`)?.value || '',
                         phone: document.getElementById(`author-${i}-phone`)?.value || '',
                         degreeAr: degreeAr,

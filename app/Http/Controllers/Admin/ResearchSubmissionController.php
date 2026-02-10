@@ -30,7 +30,7 @@ class ResearchSubmissionController extends Controller
      */
     public function getData(Request $request)
     {
-        $query = Research::with(['user', 'approver', 'clientOrder', 'primaryCertificate'])
+        $query = Research::with(['user', 'approver', 'clientOrder', 'primaryCertificate', 'authors'])
             ->orderBy('created_at', 'desc')
             ->select('research.*');
 
@@ -101,6 +101,29 @@ class ResearchSubmissionController extends Controller
                     $q->where('english_title', 'like', "%{$keyword}%")
                       ->orWhere('arabic_title', 'like', "%{$keyword}%");
                 });
+            })
+            ->filterColumn('author_name', function($query, $keyword) {
+                $query->whereHas('authors', function($q) use ($keyword) {
+                    $q->where('name_en', 'like', "%{$keyword}%")
+                      ->orWhere('name_ar', 'like', "%{$keyword}%")
+                      ->orWhere('email', 'like', "%{$keyword}%");
+                });
+            })
+            ->filter(function ($query) use ($request) {
+                if ($request->has('search') && !empty($request->search['value'])) {
+                    $search = $request->search['value'];
+                    $query->where(function($q) use ($search) {
+                        $q->where('english_title', 'like', "%{$search}%")
+                          ->orWhere('arabic_title', 'like', "%{$search}%")
+                          ->orWhere('paper_id_en', 'like', "%{$search}%")
+                          ->orWhere('paper_id_ar', 'like', "%{$search}%")
+                          ->orWhereHas('authors', function($authorQuery) use ($search) {
+                              $authorQuery->where('name_en', 'like', "%{$search}%")
+                                          ->orWhere('name_ar', 'like', "%{$search}%")
+                                          ->orWhere('email', 'like', "%{$search}%");
+                          });
+                    });
+                }
             })
             ->rawColumns(['status', 'language', 'certificate_status', 'action'])
             ->make(true);
