@@ -11,9 +11,14 @@
         dataTable(status);
     });
 
-    var allResearchTable
+    var allResearchTable;
+    
     $(document).on('input', '#datatableSearch', function () {
-        allResearchTable.search($(this).val()).draw();
+        // Find the currently active/visible table
+        var activeTable = $('.tab-pane.active table').attr('id');
+        if (activeTable && $.fn.DataTable.isDataTable('#' + activeTable)) {
+            $('#' + activeTable).DataTable().search($(this).val()).draw();
+        }
     });
 
     function dataTable(status) {
@@ -53,6 +58,24 @@
             ],
             order: [[7, 'desc']],
             stateSave: true,
+            stateLoadCallback: function(settings, callback) {
+                var state = JSON.parse(localStorage.getItem('DataTables_' + settings.sInstance));
+                // Restore the custom search input value
+                if (state && state.search && state.search.search) {
+                    $('#datatableSearch').val(state.search.search);
+                } else {
+                    // Clear search input if no saved search
+                    $('#datatableSearch').val('');
+                }
+                callback(state);
+            },
+            initComplete: function(settings, json) {
+                // Clear search if input field is empty on page load
+                var searchValue = $('#datatableSearch').val();
+                if (!searchValue || searchValue.trim() === '') {
+                    this.api().search('').draw();
+                }
+            },
             "bDestroy": true
         });
     }
