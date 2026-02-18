@@ -17,7 +17,9 @@
             selector.find('input[name=id]').val(response.data.template.id);
             selector.find('input[name=title]').val(response.data.template.title);
             selector.find('input[name=subject]').val(response.data.template.subject);
+            selector.find('input[name=subject_ar]').val(response.data.template.subject_ar || '');
             selector.find('textarea[name=body]').summernote('code', response.data.template.body);
+            selector.find('textarea[name=body_ar]').summernote('code', response.data.template.body_ar || '');
             selector.modal('show');
         } else {
             commonHandler(response)

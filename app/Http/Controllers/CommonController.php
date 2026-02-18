@@ -59,8 +59,9 @@ class CommonController extends Controller
             // Get client_order_id from request
             $clientOrderId = $request->input('client_order_id', null);
 
-            // Detect language from research data
-            $language = !empty($researchData['research']['arabicTitle']) ? 'ar' : 'en';
+            // Detect language from research data - use the language user selected in the form
+            // If language is explicitly provided, use it; otherwise default to 'ar'
+            $language = $researchData['language'] ?? ($researchData['research']['language'] ?? 'ar');
 
             // Create research record
             $research = Research::create([

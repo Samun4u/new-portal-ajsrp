@@ -75,9 +75,11 @@
                     <input type="hidden" name="id">
 
                     <div class="row rg-20">
+                        <!-- Available Placeholders Info -->
                         <div class="col-12">
                             <p class="alert-success p-20 templateFields"></p>
                         </div>
+
                         <div class="col-12">
                             <label for="title" class="zForm-label">{{ __('Title') }}<span
                                     class="text-danger">*</span></label>
@@ -85,16 +87,26 @@
                                    placeholder="{{ __('Title') }}" required>
                         </div>
                         <div class="col-12">
-                            <label for="subject" class="zForm-label">{{ __('Subject') }}<span
+                            <label for="subject" class="zForm-label">{{ __('Subject (English)') }}<span
                                     class="text-danger">*</span></label>
                             <input type="text" class="form-control zForm-control" id="subject" name="subject"
                                    placeholder="{{ __('Subject') }}" required>
                         </div>
+                        <div class="col-12">
+                            <label for="subject_ar" class="zForm-label">{{ __('Subject (Arabic)') }}</label>
+                            <input type="text" class="form-control zForm-control" id="subject_ar" name="subject_ar"
+                                   placeholder="{{ __('Arabic Subject') }}" dir="rtl">
+                        </div>
                         <div class="col-12 mb-25">
-                            <label for="body" class="zForm-label">{{ __('Body') }} <span
+                            <label for="body" class="zForm-label">{{ __('Body (English)') }} <span
                                     class="text-danger">*</span></label>
                             <textarea class="form-control zForm-control summernoteOne" name="body" id="body"
                                       placeholder="Body"></textarea>
+                        </div>
+                        <div class="col-12 mb-25">
+                            <label for="body_ar" class="zForm-label">{{ __('Body (Arabic)') }}</label>
+                            <textarea class="form-control zForm-control summernoteOne" name="body_ar" id="body_ar"
+                                      placeholder="Arabic Body" dir="rtl"></textarea>
                         </div>
                     </div>
 

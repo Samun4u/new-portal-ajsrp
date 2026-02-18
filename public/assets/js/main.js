@@ -207,15 +207,9 @@
                     tabsize: 2,
                     minHeight: 183,
                     toolbar: [
-                        // ["style", ["style"]],
-                        // ["view", ["undo", "redo"]],
-                        // ["fontname", ["fontname"]],
-                        // ["fontsize", ["fontsize"]],
-                        // ["font", ["bold", "italic", "underline"]],
-                        // ["para", ["ul", "ol", "paragraph"]],
-                        // ["color", ["color"]],
                         ["font", ["bold", "italic", "underline"]],
                         ["para", ["ul", "ol", "paragraph"]],
+                        ["view", ["codeview"]], // Code view button added
                     ],
                 });
             },

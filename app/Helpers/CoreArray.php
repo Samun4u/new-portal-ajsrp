@@ -1211,6 +1211,13 @@ function customEmailTempFields($type = null)
           '{{book_author}}' => '',
           '{{book_publication_year}}' => '',
         ];
+    }else if ($type == 'research-confirmation'){
+        $data = [
+            '{{research_title}}' => '',
+            '{{research_field}}' => '',
+            '{{journal}}' => '',
+            '{{research_id}}' => '',
+        ];
     }else{
         $data = [];
     }

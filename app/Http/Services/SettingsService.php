@@ -98,6 +98,15 @@ class SettingsService
             $emailTemplate->title = $request->title;
             $emailTemplate->subject = $request->subject;
             $emailTemplate->body = $request->body;
+            
+            // Update Arabic fields if provided
+            if ($request->has('subject_ar')) {
+                $emailTemplate->subject_ar = $request->subject_ar;
+            }
+            if ($request->has('body_ar')) {
+                $emailTemplate->body_ar = $request->body_ar;
+            }
+            
             $emailTemplate->save();
 
             DB::commit();

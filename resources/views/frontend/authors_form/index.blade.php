@@ -1044,29 +1044,37 @@
                         <label class="form-label" for="paper-id-ar">
                             <span data-lang="ar">رقم البحث/الورقة (Paper ID)</span>
                             <span data-lang="en" style="display: none;">Paper ID (Arabic)</span>
+                            <span class="required">*</span>
                         </label>
                         <input type="text"
                             id="paper-id-ar"
-                            class="form-control"
+                            class="form-control validate-field"
+                            required
+                            aria-required="true"
                             data-lang-placeholder-ar="أدخل رقم البحث بالعربية"
                             data-lang-placeholder-en="Enter paper ID in Arabic"
                             placeholder="أدخل رقم البحث بالعربية"
                             lang="ar"
                             oninput="syncPaperID('ar', this.value)">
+                        <p class="error-message" role="alert"></p>
                     </div>
                     <div class="field-group">
                         <label class="form-label" for="paper-id-en">
                             <span data-lang="ar">Paper ID</span>
                             <span data-lang="en" style="display: none;">Paper ID (English)</span>
+                            <span class="required">*</span>
                         </label>
                         <input type="text"
                             id="paper-id-en"
-                            class="form-control"
+                            class="form-control validate-field"
+                            required
+                            aria-required="true"
                             data-lang-placeholder-ar="Enter paper ID in English"
                             data-lang-placeholder-en="Enter paper ID in English"
                             placeholder="Enter paper ID in English"
                             lang="en"
                             oninput="syncPaperID('en', this.value)">
+                        <p class="error-message" role="alert"></p>
                     </div>
                 </div>
 
@@ -2673,6 +2681,7 @@
         // Collect form data for submission
         function collectFormData() {
             const data = {
+                language: currentLang, // Add selected language to form data
                 research: {
                     arabicTitle: document.getElementById('arabic-title')?.value || '',
                     englishTitle: document.getElementById('english-title')?.value || '',
